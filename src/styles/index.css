@@ -1,0 +1,146 @@
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.introImg{
+  width: 100%;
+  opacity: 95%;
+}
+
+@media only screen and (max-width: 768px) {
+  .img-responsive {
+    max-width: 100%;
+    max-height: 600px;
+    height: 250px;
+  }
+
+  .hideUnderMin {
+    display: none;
+  }
+
+  .w-small-75{
+    width: 75% !important;
+  }
+
+  .pxo-sm{
+    margin-left: 0 !important;
+    margin-right: 10% !important;
+  }
+}
+
+@media only screen and (max-width : 1000px) {
+  
+ .centerCards {
+   display: flex !important;
+   justify-content: center !important; 
+ }
+}
+
+@media only screen and (min-width : 1390px) {
+  
+  .centerCards {
+    display: flex !important;
+    justify-content: space-around !important;
+  }
+ }
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centeredTop {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.Container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.BottomAlign {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.mt2{
+  margin-top: 2%;
+}
+
+.footer-link{
+   text-decoration: none;
+}
+.footer-link:hover{
+  opacity: 90%;
+  color: rgb(161, 157, 157) !important;
+}
+
+.footertext{
+  opacity: 80%;
+  color: rgb(161, 157, 157) !important;
+}
+
+.footertext:hover{
+  opacity: 100%;
+  color: #1f9bcf !important;
+}
+
+.map {
+  margin: 1px solid gray;
+}
+
+.bottomLine{
+  width: 100%;
+  height: 2px;
+  border-bottom: 2px solid gray;
+  opacity: 25%;
+}
+
+a:hover{
+  cursor: pointer;
+  text-decoration: none ;
+}
+
+a{
+  text-decoration: none;
+}
+
+.navLeft{
+  margin-left: auto ;
+}
+
+.lp{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  border: 1px solid rgba(122, 119, 119, 0.183);
+  border-radius: 2px;
+}
+
+.lp p{
+  margin-bottom: 0;
+}
