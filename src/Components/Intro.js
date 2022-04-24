@@ -7,7 +7,7 @@ export default function Intro (props) {
     return (
         <>
            <div className='Container'>
-              <img className ='introImg img-responsive' src={`/static/${IMG_PATH}`} placeholder='Error' alt='loading...'/> 
+              <img className ='introImg img-responsive' src={`../static/${IMG_PATH}`} placeholder='Error' alt='loading...'/> 
               <div className="centeredTop p-2"><h1 className='text-light'>Welcome to SPS SULTAN PIPE STORE SITE</h1></div>
               
               <div className="centered hideUnderMin p-2">
