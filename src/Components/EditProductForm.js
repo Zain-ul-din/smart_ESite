@@ -109,7 +109,7 @@ export default function EditProduct (props) {
    
     return (
         <>
-           <div className = 'container bg-dark p-2 w-100 fixed-bottom px-5 rounded'>
+           <div className = 'container bg-dark p-2 w-100 fixed-bottom px-5 rounded fadeout'>
               <h2 className='text-center fw-bold text-light'>Edit Form </h2>
 
               {/*Name Input */}

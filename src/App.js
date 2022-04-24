@@ -18,7 +18,7 @@ import Admin from './Components/Admin'
 import { Toaster } from 'react-hot-toast'
 
 // App Auth
-import {ADMIN_MAIL} from './Env'
+import { ADMIN_MAIL , USER_MAIL } from './Env'
 
 AppAuth()
 
@@ -64,7 +64,7 @@ export default function App() {
       })
   
     //  setIsAdmin(process.env.REACT_APP_ADMIN_MAIL === user.email)
-    setIsAdmin(ADMIN_MAIL == _user.email)
+    setIsAdmin(ADMIN_MAIL == _user.email || USER_MAIL == _user.email)
   } ,[isLogin])
 
   function SignInWithGoogle (){

@@ -9,7 +9,7 @@ export default function Navbar (props) {
 
     return (
         <> <nav className="navbar navbar-dark navbar-expand-lg bg-dark m-light "> 
-       <a className="navbar-brand p-2 " href="/">STORE APP</a>
+       <a className="navbar-brand p-2 " href="/">Sultan Pipe Store</a>
         <button className="navbar-toggler m-2 text-center" type="button" onClick={(e)=>{
             e.preventDefault()
             setToggleState(toggleState === 'collapse' ? '' :'collapse' )

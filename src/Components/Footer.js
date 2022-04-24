@@ -17,7 +17,7 @@ export default function Footer (props) {
                   <div className='col-lg-4 col-sm-6 text-center'>
                       <h2 className='pd-3 text-light'>ABOUT US</h2>
                        <p className='small font-monospace opacity-75 text-wrap'>
-                         Add some about us text here
+                       Sultan pipe store is a wholesale shop we deals with  pvc-upvc pipes, fittings, watertanks and all sanitary and some electric items like wires..we provide the best with best price.Our main product companies are <strong className='text-success'>Popular,Gm,Jm,welco,Metro  etc</strong>
                        </p>
                   </div>
                   <div className='col-lg-2 col-sm-6 text-center'>
@@ -41,7 +41,7 @@ export default function Footer (props) {
                                <a onClick = {(e)=>{
                                  e.preventDefault()
                                  props.MapScrollAction()
-                               }} className='footer-link text-info py-1 footertext text-wrap'><SiGooglemaps/> Chak no 447 Eb burewala pakistan</a>
+                               }} className='footer-link text-info py-1 footertext text-wrap'><SiGooglemaps/>741-C Ferozepur road opposite PEL factory(near Qainchi metro station),Lahore</a>
                              </li>  
                         </ul>
                   </div>
@@ -59,7 +59,7 @@ export default function Footer (props) {
                                     color : '#fff',
                                   }
                                  })
-                               }} className='footer-link text-info py-1'><AiOutlineMail/> fy01608@gmail.com</a>
+                               }} className='footer-link text-info py-1'><AiOutlineMail/> sultanpipes123@gmail.com</a>
                              </li> 
                         </ul>
                   </div>
@@ -78,12 +78,31 @@ export default function Footer (props) {
                                   }
                                  })
                                }}> 
-                               <AiFillPhone/> +92 311 6287297
+                               <AiFillPhone/> 03009499786
                                </a>
                              </li>
-                        </ul>   
+                        </ul>  
+                        <ul className='list-unstyled '>
+                             <li >
+                               <a  className='footer-link text-info py-0 small' onClick={(e)=>{
+                                 e.preventDefault()
+                                 CopyToClipBoard(e.target.innerText)
+                                 toast.success('Text Copied' , {
+                                  style:{
+                                    borderRadius : '10px' , 
+                                    background : '#333' ,
+                                    color : '#fff',
+                                  }
+                                 })
+                               }}> 
+                               <AiFillPhone/> 04235919911 
+                               </a>
+                             </li>
+                        </ul>  
                   </div>
-                  
+                  <small className='text-light text-center text-muted font-monospace mt-2'>
+                   &copy; Copyright 2022 SPT
+                  </small>
             </div>
           </div>
        </footer>

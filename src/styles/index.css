@@ -144,3 +144,7 @@ a{
 .lp p{
   margin-bottom: 0;
 }
+
+.fadeout{
+  transition:all 50ms ease-out !important; /* Model Fade Out*/
+}
