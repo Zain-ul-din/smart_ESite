@@ -24,7 +24,6 @@ export default function Intro (props) {
                   }}>Explore More!</button>
               </div>
            </div>
-
         </>
     )
 } 
