@@ -58,3 +58,5 @@ export default function Navbar (props) {
        </nav> </>
     )
 }
+
+// meta data added
