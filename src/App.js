@@ -150,7 +150,6 @@ export default function App() {
 
 export function CopyToClipBoard (value) { window.navigator.clipboard.writeText(value) }
 
-
 export function HomeScrollAction () {
   window.scrollTo(0 , 0) // scrolls to start
 }
