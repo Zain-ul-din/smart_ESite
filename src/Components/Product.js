@@ -1,5 +1,4 @@
-import React ,{useEffect, useState} from 'react'
-
+import React  from 'react'
 
 import { doc , deleteDoc } from 'firebase/firestore'
 import { FireBaseStore ,Storage } from '../Firebase/FireBaseInit'
@@ -37,7 +36,14 @@ export default function Product (props) {
             <div className="card-body rounded">
               <h5 className="card-title text-info">{props.name}</h5>
                 <p className="card-text">{props.description}</p>
-              <a  className="btn btn-primary text-center">Price : {props.price}</a>
+              <a  className="btn btn-primary text-center" 
+               onClick={(e)=>{
+                  if (props.isAdmin) return
+                  e.preventDefault()
+                  toast.success ('Contact Us For Order | Visit Us' ,{ style:{borderRadius : '10px' , background : '#333' ,color : '#fff'} })
+                  window.scrollTo(0 ,window.document.body.scrollHeight)
+               }}>
+                 Price : {props.price} PKR</a>
               <div></div>
                 {props.isAdmin && <button className='btn btn-info btn-sm  mx-2 my-2 rounded'
                    onClick = {(e)=>{
